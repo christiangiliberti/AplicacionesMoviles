@@ -1,2 +1,2 @@
-x= "hola mundo Node!"
+var x= "hola mundo Node!"
 console.log(x);
