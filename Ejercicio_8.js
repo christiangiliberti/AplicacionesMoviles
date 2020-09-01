@@ -1,15 +1,21 @@
 var numbers = [7,9,25,42];
 
-var p=0;
+
 function even (n){
-  for(var i of n){
-    if (i % 2 == 0){
-        p++;
+    if (n % 2 == 0){
+        return true;
     }
 }
-console.log(p);
+function cuantosCumplen (n,a){
+var p=0;
+  for(var i of a){
+    if(n(i)=== true){
+      p++;
+    }
+  }
+  console.log(p);
 }
 
 
-console.log(even(numbers));
+console.log(cuantosCumplen(even,numbers));
 
