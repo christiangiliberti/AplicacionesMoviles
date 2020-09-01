@@ -1,11 +1,15 @@
 var numbers = [7,9,87,42];
 
-var res = numbers.filter(rechazar);
 
-function rechazar(num){
-    return num % 2 == 1;
+function even (n){
+    if (n % 2 == 1){
+        return true;
+    }
 }
+function rechazar (n,a){
+    var res = a.filter(n=>even(n));
+    console.log(res);
+    }
 
-console.log(res);
 
-
+console.log(rechazar(even,numbers));
