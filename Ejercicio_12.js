@@ -5,14 +5,13 @@ class Persona {
     }
 
     presentarme() {
-        return "Mi nombre es " + this.nombre + " y tengo " + this.edad + " años";
+        return "Hola mi nombre es " + this.nombre + " y tengo " + this.edad + " años";
     }
 }
 
 class Estudiante extends Persona {
-    constructor(nombre, edad, profesor) {
+    constructor(nombre, edad) {
         super(nombre, edad);
-        this.profesor = profesor;
     }
 
     estudiando() {
@@ -24,8 +23,7 @@ class Estudiante extends Persona {
     }
 }
 
-var alumno = new Estudiante("Juan", 20, "Pedro");
-console.log(alumno.presentarme());
-console.log(alumno.estudiando());
+var alumno = new Estudiante("Christian", 37);
 alumno.setProfesor("Marta")
+console.log(alumno.presentarme());
 console.log(alumno.estudiando());

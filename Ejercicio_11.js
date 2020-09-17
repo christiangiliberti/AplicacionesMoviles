@@ -5,12 +5,12 @@ class Persona {
     }
 
     presentarse() {
-        return "Mi nombre es " + this.nombre + " y tengo " + this.edad + " años";
+        return "Hola mi nombre es " + this.nombre + " y tengo " + this.edad + " años.";
     }
 }
 
-var persona = new Persona("Christian", 37);
 
+var persona = new Persona("Christian", 37);
 console.log(persona.presentarse());
 
 
