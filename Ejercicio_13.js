@@ -38,7 +38,7 @@ class Profesor extends Persona {
     }
 
     enseñando() {
-       this.estudiantes.forEach(i => console.log("Les estoy ensañando a " + i.nombre));
+       this.estudiantes.forEach(i => console.log("Le estoy ensañando a " + i.nombre));
     }
 
     addEstudiante(estudiante) {
@@ -55,7 +55,6 @@ var Alumnos = [
 var profesor = new Profesor("Jorge", 24, Alumnos);
 console.log(profesor.presentarse());
 
-profesor.enseñando();
 
 profesor.addEstudiante(new Estudiante("Laura", 21));
 
