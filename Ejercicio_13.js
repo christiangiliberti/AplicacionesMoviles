@@ -4,7 +4,8 @@ class Persona {
         this.edad = edad;
     }
 
-    presentarme() {
+    presentarse() {
+
         return "Mi nombre es " + this.nombre + " y tengo " + this.edad + " años";
     }
 }
@@ -37,7 +38,7 @@ class Profesor extends Persona {
     }
 
     enseñando() {
-       this.estudiantes.forEach(e => console.log(e.nombre));
+       this.estudiantes.forEach(i => console.log(i.nombre));
     }
 
     addEstudiante(estudiante) {
@@ -46,13 +47,13 @@ class Profesor extends Persona {
     }
 }
 
-var arrayAlumnos = [
+var Alumnos = [
     new Estudiante("Juan", 20),
     new Estudiante("Pedro", 23)
 ];
 
-var profesor = new Profesor("Jorge", 24, arrayAlumnos);
-console.log(profesor.presentarme());
+var profesor = new Profesor("Jorge", 24, Alumnos);
+console.log(profesor.presentarse());
 profesor.enseñando();
 
 profesor.addEstudiante(new Estudiante("Laura", 21));
