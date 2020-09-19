@@ -7,4 +7,5 @@ function quienesAprobaron(num){
 
 var numbersFilter = numbers.filter(a=>a.every(quienesAprobaron));
     
+
 console.log(numbersFilter);
