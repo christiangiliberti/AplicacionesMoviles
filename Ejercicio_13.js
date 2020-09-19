@@ -9,6 +9,7 @@ class Persona {
     }
 }
 
+
 class Estudiante extends Persona {
     constructor(nombre, edad, profesor) {
         super(nombre, edad);
@@ -28,7 +29,7 @@ class Profesor extends Persona {
     constructor(nombre, edad, estudiantes) {
         super(nombre, edad);
         if(estudiantes) {
-            estudiantes.forEach(e => e.setProfesor(nombre));
+            estudiantes.forEach(i => i.setProfesor(nombre));
             this.estudiantes = estudiantes;
         } else {
             this.estudiantes = [];
