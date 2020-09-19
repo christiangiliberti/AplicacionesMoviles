@@ -15,7 +15,7 @@ class Estudiante extends Persona {
     }
 
     estudiando() {
-        return "Estudiando con " + this.profesor;
+        return "y estoy estudiando con " + this.profesor;
     }
 
     setProfesor(profesor) {
